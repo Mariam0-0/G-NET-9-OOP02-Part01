@@ -81,28 +81,44 @@ namespace G_NET_9_OOP02_Part01
 
         #endregion
 
-        #region Question 03
-        // =================================================================================================
-        //Q3 : Look at the following code and answer the questions below:
-        //a) What is `this[int index]` called? Explain its purpose.
-        //b) What happens if someone writes `register[10] = "Ali";` ? How would you make the indexer safer?
-        //c) Can a class have more than one indexer? If yes, give an example of when that would be useful.
-        // =================================================================================================
+            #region Question 03
+            // =================================================================================================
+            //Q3 : Look at the following code and answer the questions below:
+            //a) What is `this[int index]` called? Explain its purpose.
+            //b) What happens if someone writes `register[10] = "Ali";` ? How would you make the indexer safer?
+            //c) Can a class have more than one indexer? If yes, give an example of when that would be useful.
+            // =================================================================================================
 
-        #endregion
+            // a)
+            // this[int index] is representing an indexer in C#
+            // An indexer lets an object be accessed using array-like syntax, similar to arrays or lists
+            // It has cleaner syntax, validates keys and handle missing values
+
+            // b)
+            // calling an index out of range will cause an error
+            // to validate we must add and if condition when setting values like
+            //  if (Index < 0 || Index >= args.Length) {return null;}
+
+            // c) 
+            // yes but only with overloading logic, so we can have multiple indexers btu with different attributes
+            // we can't have multiple indexers with the same attributes (whether same data types or number of
+            // attributes)
+
+            // ==> example in StudentsList class
+            #endregion
 
 
 
 
-        #region Question 04
-        // =================================================================================================
-        //Q4 : Consider the following code and answer the questions below:
-        //a) What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
-        //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
-        // =================================================================================================
+            #region Question 04
+            // =================================================================================================
+            //Q4 : Consider the following code and answer the questions below:
+            //a) What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
+            //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
+            // =================================================================================================
 
 
-        #endregion
+            #endregion
 
 
 
