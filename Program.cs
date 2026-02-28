@@ -127,12 +127,6 @@ namespace G_NET_9_OOP02_Part01
             // but not non-static fields
 
             #endregion
-
-
-
-
-
-
     }
     }
 }
