@@ -52,39 +52,63 @@ namespace G_NET_9_OOP02_Part01
 
             #region Question 02
             // =================================================================================================
-            //Q02 : What is the difference between a field and a property in C#? Can a property contain logic? Give an example of a read-only property that returns a calculated value.
-            // =================================================================================================
-
-            #endregion
-
-            #region Question 03
-            // =================================================================================================
-            //Q3 : Look at the following code and answer the questions below:
-            //a) What is `this[int index]` called? Explain its purpose.
-            //b) What happens if someone writes `register[10] = "Ali";` ? How would you make the indexer safer?
-            //c) Can a class have more than one indexer? If yes, give an example of when that would be useful.
-            // =================================================================================================
-
-            #endregion
-
-
-
-
-            #region Question 04
-            // =================================================================================================
-            //Q4 : Consider the following code and answer the questions below:
-            //a) What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
-            //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
+            //Q02 : What is the difference between a field and a property in C#? Can a property contain logic?
+            //Give an example of a read-only property that returns a calculated value.
             // =================================================================================================
 
 
-            #endregion
+            // Field: is representing something in the class like Name, Age, Address, but with no validation
+
+            // Property: is similar to a method that can get and set values in the attribute by calling it directly
+            // but with cleaner syntax in C#
+            // ===================================================================
+
+            // Properties can contain any logic in setting and getting like normal set and get methods
+
+            // ===================================================================
+
+            // Read Only Property
+
+            //private int quantity;
+            //private decimal unitPrice;
+            //public string TotalPrice
+            //{
+            //    get { return quantity * unitPrice; }
+            //}
+
+            // ===================================================================
+
+
+        #endregion
+
+        #region Question 03
+        // =================================================================================================
+        //Q3 : Look at the following code and answer the questions below:
+        //a) What is `this[int index]` called? Explain its purpose.
+        //b) What happens if someone writes `register[10] = "Ali";` ? How would you make the indexer safer?
+        //c) Can a class have more than one indexer? If yes, give an example of when that would be useful.
+        // =================================================================================================
+
+        #endregion
+
+
+
+
+        #region Question 04
+        // =================================================================================================
+        //Q4 : Consider the following code and answer the questions below:
+        //a) What does the `static` keyword mean on `TotalOrders`? How is it different from the `Item` field?
+        //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
+        // =================================================================================================
+
+
+        #endregion
 
 
 
 
 
 
-        }
+    }
     }
 }
