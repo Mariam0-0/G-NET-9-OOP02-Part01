@@ -107,9 +107,6 @@ namespace G_NET_9_OOP02_Part01
             // ==> example in StudentsList class
             #endregion
 
-
-
-
             #region Question 04
             // =================================================================================================
             //Q4 : Consider the following code and answer the questions below:
@@ -117,6 +114,17 @@ namespace G_NET_9_OOP02_Part01
             //b) Can a static method inside `Order` access the `Item` field directly? Why or why not?
             // =================================================================================================
 
+            // a)
+            // static means that this value belongs to the class itself not its instances
+            // // so each time the constructor is called TotalOrders will be incremented and
+            // we can call it like this "Order.TotalOrders", because it is shared across all usages
+
+            // it is different from Item, because each instance has its own "Item", but 
+            // TotalOrders in only one for all instances from that class
+
+            // b)
+            // no it can't because static method can directly access static fields only,
+            // but not non-static fields
 
             #endregion
 
